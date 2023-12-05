@@ -5,7 +5,6 @@ import { useRoute } from '@react-navigation/native'
 const RecipeDetailsScreen = () => {
     const route = useRoute()
     const { item } = route.params
-    console.log(item.ingredients)
   return (
     <View style={{backgroundColor:item.color,flex:1}}>
           <View style={{ backgroundColor: 'white', flex: 1, marginTop: 140, borderTopLeftRadius: 56, borderTopRightRadius: 56, alignItems:'center'}}>
