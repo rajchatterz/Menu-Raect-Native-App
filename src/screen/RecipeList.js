@@ -13,10 +13,10 @@ export default function RecipeList() {
           <Header headerText={"Raj Chatterjee"} headerIcon={"bell-o"} />
           <SearchFilter icon="search" placeHolder={"Type Chicken Makhani"} />
           <Categories/>
-          <View style={{marginTop:20}}>
+          <View style={{marginTop:20,flex:1}}>
               <Text style={{fontSize:22,fontWeight:'900',color:'#874fc4'}}>RecipeList</Text>
+            <RecipeCard  />
           </View>
-          <RecipeCard  />
         </SafeAreaView>
       
   )
