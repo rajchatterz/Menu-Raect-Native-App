@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { useRoute } from '@react-navigation/native'
 
@@ -21,9 +21,12 @@ const RecipeDetailsScreen = () => {
               <View>
                   <Text style={{textAlign:'center' ,marginTop: -90, fontSize: 23, fontWeight: 'bold' }}>{item.name}</Text>
               </View>
+              <ScrollView showsVerticalScrollIndicator={false} style={{marginTop:-30,paddingHorizontal:10,elevation:100,shadowColor:'black'}}>
+              <View style={{marginTop:40}}>
               <Text style={{
                   marginTop:-40, fontSize: 20,
               }}>{item.description}</Text>
+              </View>
               {/* Recipe extra details */}
               <View style={{flexDirection:'row',justifyContent:'space-evenly',width:'100%'}}>
                   <View style={{ backgroundColor: "rgba(135,206,235,0.8)", paddingHorizontal:16,paddingVertical:26,borderRadius:9,alignItems:'center',marginTop:10 }}>
@@ -45,9 +48,9 @@ const RecipeDetailsScreen = () => {
                   <Text style={{ fontSize: 22, fontWeight: "600" }}>Ingredients:</Text>
                   {item.ingredients.map((item,index) => {
                       return (
-                          <View style={{flexDirection:"row", alignItems:'center',gap:6}}>
+                          <View key={`item-${index}`} style={{flexDirection:"row", alignItems:'center',gap:6}}>
                               <View style={{backgroundColor:"red",height:10,width:10,borderRadius:5}}></View>
-                              <Text style={{ fontSize: 18, fontWeight: "500" }} key={index}>{item}</Text>
+                              <Text style={{ fontSize: 18, fontWeight: "500" }} >{item}</Text>
                           
                           </View>
                     )
@@ -56,17 +59,18 @@ const RecipeDetailsScreen = () => {
 
               {/* reciper steps */}
               <View style={{alignSelf:'flex-start',marginVertical:22}}>
-                  <Text style={{ fontSize: 22, fontWeight: "600" }}>Ingredients:</Text>
-                  {item.ingredients.map((item) => {
+                  <Text style={{ fontSize: 22, fontWeight: "600" }}>Steps</Text>
+                  {item.steps.map((item,index) => {
                       return (
-                          <View style={{flexDirection:"row", alignItems:'center',gap:6}}>
+                          <View key={`item-${index}`} style={{flexDirection:"row", alignItems:'center',gap:6}}>
                               <View style={{backgroundColor:"red",height:10,width:10,borderRadius:5}}></View>
-                              <Text style={{ fontSize: 18, fontWeight: "500" }} key={index}>{item}</Text>
+                              <Text style={{ fontSize: 18, fontWeight: "500" }} >{item}</Text>
                           
                           </View>
                     )
                 })}  
               </View>
+              </ScrollView>
       </View>
     </View>
   )
