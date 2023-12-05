@@ -59,7 +59,7 @@ export const recipeList = [
 	{
 		id: "02",
 		name: "Lasagna",
-		image: require("../../assets/images/lasgana.png"),
+		image: require("../../assets/image/lasgana.png"),
 		rating: "3.6",
 		ingredients: [
 			"Lasagna Noodles",
@@ -84,7 +84,7 @@ export const recipeList = [
 	{
 		id: "03",
 		name: "Hot Dog",
-		image: require("../../assets/images/hotdog.png"),
+		image: require("../../assets/image/hotdog.png"),
 		rating: "4.6",
 		ingredients: ["Hot Dog Buns", "Frankfurters", "Ketchup", "Mustard"],
 		time: "40 mins",
@@ -104,7 +104,7 @@ export const recipeList = [
 	{
 		id: "04",
 		name: "Manchurian",
-		image: require("../../assets/images/manchurian.png"),
+		image: require("../../assets/image/manchurian.png"),
 		rating: "3.6",
 		ingredients: ["Cauliflower", "Soy Sauce", "Ginger", "Garlic"],
 		time: "30 mins",
@@ -124,7 +124,7 @@ export const recipeList = [
 	{
 		id: "05",
 		name: "Chicken",
-		image: require("../../assets/images/chicken.png"),
+		image: require("../../assets/image/chicken.png"),
 		rating: "2.2",
 		ingredients: ["Chicken Breasts", "Salt", "Black Pepper", "Olive Oil"],
 		time: "45 mins",
@@ -145,7 +145,7 @@ export const recipeList = [
 	{
 		id: "06",
 		name: "Cupcakes",
-		image: require("../../assets/images/cupcakes.png"),
+		image: require("../../assets/image/cupcakes.png"),
 		rating: "5.0",
 		ingredients: ["Flour", "Sugar", "Eggs", "Butter"],
 		time: "60 mins",
@@ -165,7 +165,7 @@ export const recipeList = [
 	{
 		id: "07",
 		name: "Curry",
-		image: require("../../assets/images/curry.png"),
+		image: require("../../assets/image/curry.png"),
 		rating: "4.8",
 		ingredients: ["Meat", "Curry Powder", "Coconut Milk", "Spices"],
 		time: "55 mins",
@@ -187,7 +187,7 @@ export const recipeList = [
 	{
 		id: "08",
 		name: "Ramen",
-		image: require("../../assets/images/ramen-org.png"),
+		image: require("../../assets/image/ramen-org.png"),
 		rating: "4.2",
 		ingredients: ["Ramen Noodles", "Soy Sauce", "Eggs", "Vegetables"],
 		time: "35 mins",
